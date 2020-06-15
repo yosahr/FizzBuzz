@@ -6,8 +6,14 @@ import org.junit.Test
 class DemoTest {
 
     @Test
-    fun `should return Fizz when number is 3`() {
+    fun `should be Fizz when number is 3`() {
         val demo = Demo()
         assertThat(demo.fizzBuzz(3)).isEqualTo("Fizz")
+    }
+
+    @Test
+    fun `should be 4 when number is 4`() {
+        val demo = Demo()
+        assertThat(demo.fizzBuzz(6)).isEqualTo("4")
     }
 }
