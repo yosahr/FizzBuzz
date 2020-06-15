@@ -16,4 +16,9 @@ class DemoTest {
     fun `should be 4 when number is 4`() {
         assertThat(demo.fizzBuzz(4)).isEqualTo("4")
     }
+
+    @Test
+    fun `should be Buzz when number is 5`() {
+        assertThat(demo.fizzBuzz(5)).isEqualTo("Buzz")
+    }
 }
