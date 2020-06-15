@@ -14,6 +14,6 @@ class DemoTest {
     @Test
     fun `should be 4 when number is 4`() {
         val demo = Demo()
-        assertThat(demo.fizzBuzz(6)).isEqualTo("4")
+        assertThat(demo.fizzBuzz(4)).isEqualTo("4")
     }
 }
