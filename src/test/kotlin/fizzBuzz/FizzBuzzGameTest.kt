@@ -7,22 +7,22 @@ import org.junit.Test
 class FizzBuzzGameTest {
 
     @Test
-    fun `should be Fizz when number is 3`() {
+    fun `a number divisible by 3 should return Fizz`() {
         assertThat(play(3)).isEqualTo("Fizz")
     }
 
     @Test
-    fun `should be 4 when number is 4`() {
+    fun `a number not divisible by 3 or 5 should return itself`() {
         assertThat(play(4)).isEqualTo("4")
     }
 
     @Test
-    fun `should be Buzz when number is 5`() {
+    fun `a number divisible by 5 should return Buzz`() {
         assertThat(play(5)).isEqualTo("Buzz")
     }
 
     @Test
-    fun `should be FizzBuzz when number is 15`() {
+    fun `a number divisible by both 3 and 5 should return FizzBuzz`() {
         assertThat(play(15)).isEqualTo("FizzBuzz")
     }
 }
